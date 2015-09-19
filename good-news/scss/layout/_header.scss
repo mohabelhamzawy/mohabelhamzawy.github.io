@@ -1,0 +1,134 @@
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus{color:$white;background: transparent}
+.navbar{
+	border-radius: 0;
+	border: none;
+	text-transform: capitalize;
+	&.top-nav{
+        background: $red;
+        margin-bottom: 0;
+        button.navbar-toggle.collapsed{
+            margin-top: 22px;
+            margin-bottom: 22px;
+        }
+        a.navbar-brand{margin-top: 12px;}
+        .nav.navbar-nav{
+            margin: 17px 0;
+        }
+        ul{
+            li{
+                &>a{
+                    color: $white;
+                    &:hover{color: $white;}
+                    &.btn-default{
+                        padding: 15px 30px;
+                        color: $black;
+                        &:hover{background: $white;}
+                    }
+                }
+                &.dropdown{
+                    ul.dropdown-menu{
+                        padding-top: 10px;
+                        padding-bottom: 10px;
+                        a{
+                            color: $lightgrey-txt;
+                            i{margin-right: 18px;}
+                            &:hover{
+                                background: transparent;
+                            }
+                            &.fb:hover{color: #3B5998;}
+                            &.tw:hover{color: #00aced;}
+                            &.gl:hover{color: #bb0000;}
+                            &.li:hover{color: #007bb6;}
+                            &.pr:hover{color: #cb2027;}
+                        }
+                    }
+                }
+            }
+        }
+    }
+	&.main-nav{
+        border-bottom: 1px solid #eaeaea;
+	    background: transparent;
+        ul.navbar-nav{
+            /* padding: 25px 0; */
+            &>li{
+                &>a{
+                    padding-top: 40px;
+                    padding-bottom: 40px;
+                }
+                &.dropdown{
+                    a{
+                        color: $black;
+                        &:hover{color: $red;}
+                    }
+                    & > ul.dropdown-menu{
+                        li{
+                            &>a{font-size: $md;}
+                        }
+                    }
+                    &.mega-menu{
+                        position: static;
+                        .dropdown-menu{
+
+                            width: 100% !important;
+                            background: #ebebeb;
+                            .submenu-content{
+                                overflow: hidden;
+                                padding: 18px 0;
+                                p{
+                                    font-size: $sm;
+                                    margin-top: 15px;
+                                }
+                            }
+                            hr{border-color: #d3d3d3;}
+                            .submenu-ftr{
+                                p{
+                                    &.submenu-text{
+                                        span{color:$lightgrey-txt;}
+                                        a{
+                                            margin-right: 5px;
+                                            color:$grey-txt;
+                                            &:hover{color: $red;}
+                                        }
+                                    }
+                                }
+                            }
+                        } 
+                    }
+                }
+                .dropdown-wrapper{
+                }
+                &>a{
+                    font-size: 24px;
+                    color: $black;
+                    &:hover{color: $red;}
+                }
+            }
+            & > li.dropdown a{
+                background: transparent;
+            }
+        }
+        form.navbar-form{
+            position: relative;
+            margin: 28px -14px;
+            padding-left: 0;
+            padding-right: 0;
+            input[type="text"]{
+                padding: 21px 15px;
+                width: 100px;
+                @include transition( 0.4s);
+                &:focus{width: 270px;}
+            }
+            button{
+                position: absolute;
+                right: 2px;
+                top: 2px;
+                border: none;
+                padding: 10px 11px;
+                &:hover{
+                    background: $white;
+                }
+            }
+        }
+	}
+}

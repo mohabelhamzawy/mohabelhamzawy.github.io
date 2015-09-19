@@ -1,0 +1,125 @@
+.no-margin {
+    margin: 0 !important;
+}
+
+.margin-top5 {
+    margin-top: 5px;
+}
+
+.margin-top10 {
+    margin-top: 10px !important;
+}
+
+.margin-top15 {
+    margin-top: 15px !important;
+}
+
+.margin-top20 {
+    margin-top: 20px;
+}
+
+.margin-top25 {
+    margin-top: 25px;
+}
+
+.margin-top30 {
+    margin-top: 30px;
+}
+
+.margin-top50 {
+    margin-top: 50px;
+}
+
+.margin-bottom25 {
+    margin-bottom: 25px;
+}
+
+.margin-bottom10 {
+    margin-bottom: 10px;
+}
+
+.margin-bottom5 {
+    margin-bottom: 5px;
+}
+
+.padding-top25 {
+    margin-top: 25px;
+}
+
+.padding-bottom25 {
+    margin-bottom: 25px;
+}
+
+.width100p {
+    width: 100%;
+}
+
+.ie-hidden {
+    .ie & {
+        display: none;
+    }
+}
+
+.visible-all {
+    display: block !important;
+}
+
+.ar .forceleft {
+    direction: ltr !important;
+    text-align: right !important;
+    &::-webkit-input-placeholder {
+        text-align: right;
+    }
+    &::-moz-placeholder {
+        text-align: right;
+    }
+    &:-ms-input-placeholder {
+        text-align: right;
+    }
+}
+
+.centertext {
+    text-align: center;
+}
+
+.borderless {
+    border: none !important;
+}
+
+.forcelower {
+    text-transform: inherit !important;
+    &::-webkit-input-placeholder {
+       text-transform: uppercase;
+    }
+    &::-moz-placeholder {
+       text-transform: uppercase;
+    }
+    &:-ms-input-placeholder {
+       text-transform: uppercase;
+    }
+}
+
+.forceupper {
+    text-transform: uppercase;
+}
+
+@media (max-width: $screen-xs-max){
+    .center-xs {
+        text-align: center;
+        display: block;
+        width: 100%;
+    }
+}
+
+.global-thumb {
+    .ie & {
+        display: none !important;
+    }
+}
+
+.global-thumb-alt {
+    display: none;
+    .ie & {
+        display: inline-block !important;
+    }
+}

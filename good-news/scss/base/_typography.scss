@@ -1,0 +1,42 @@
+h1 {}
+
+h2 {
+    font-size: 2em;
+    color: $red;
+}
+
+h3 {
+    font-size: 1.5em;
+    @media (max-width: $screen-xs-max){
+        font-size: 1.2em;
+    }
+    color: $red;
+}
+
+h4 {
+    font-size: 1.3em;
+    color: $red;
+}
+
+h5 {
+    font-size: 1.1em;
+    color: $red;
+}
+
+h6 {
+    font-size: 1em;
+    color: $red;
+}
+
+.article {
+    padding: 8px 16px;
+    h2 {
+        font-size: 20px;
+        text-transform: uppercase;
+    }
+    p {
+        font-family: helvetica;
+        font-size: 1.4em;
+        color: $grey;
+    }
+}
