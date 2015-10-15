@@ -1,0 +1,150 @@
+/* Start Global */
+*{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+body{
+	padding-bottom: 2000px;
+}
+.dotted{
+	background-image: url('../imgs/dot.png');
+	background-repeat: repeat;
+	height: 100%;
+}
+.skew-section{
+	background-color: $primary-color;
+	@include transform(skewY(5deg) translate(0,-75px));
+	position: relative;
+	.reskew{
+		@include skewY(skewY(5deg));
+	}
+}
+.section{
+	padding: 140px 0;
+	.section-hdr{margin-bottom: $baseline * 4;}
+	.section-hdr-wrapper{
+		.title{
+			float: left;
+			color: $primary-color;
+			text-transform: uppercase;
+			font-family: $black-font;
+			margin-right: 50px;
+			padding-right: 100px;
+			padding-top: 10px;
+			padding-bottom: 25px;
+			border-right: 2px solid $primary-color;
+			@include skewX;
+			position: relative;
+			.reskew{
+				@include skewX (skewX(20deg));
+			}
+			span{
+				color: $second-color;
+			}
+			.hint{
+				text-transform: capitalize;
+				color: $txt-dark-grey;
+				font-family: $main-font;
+				font-style: italic;
+			}
+			&:after, &:before{
+				content: "";
+				display: inline-block;
+				position: absolute;
+			}
+			&:after{
+				width: 2px;
+				height: 100%;
+				background-color: $second-color;
+				top: 10px;
+				right: -6px;
+			}
+			&:before{
+				width: 6px;
+				height: 60%;
+				background-color: $main-color;
+				top: 30px;
+				right: -16px;
+			}
+		}
+		.mini-des{
+			padding-top: $line-height * 2;
+		}
+	}
+}
+
+/* Start Global */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Start Skills */
+/* End Skills */
+
+
+/* Start Team */
+/* End Team */
+
+
+/* Start Services */
+/* End Services */
+
+
+/* Start Facts */
+/* End Facts */
+
+
+/* Start Work */
+/* End Work */
+
+
+/* Start Recent Work */
+/* End Recent Work */
+
+
+/* Start Twitter */
+/* End Twitter */
+
+
+/* Start Testimonial */
+/* End Testimonial */
+
+
+/* Start Pricing */
+/* End Pricing */
+
+
+/* Start Quote */
+/* End Quote */
+
+
+/* Start Contact */
+/* End Contact */
+
+
+/* Start Map */
+/* End Map */
+
+
+/* Start Footer */
+/* End Footer */

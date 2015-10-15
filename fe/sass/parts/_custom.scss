@@ -1,0 +1,116 @@
+/* Start Skew-section */
+.section{
+	position: relative;
+	.skew{
+		width: 50%;
+		height: 330px;
+		background-color: $main-color;					
+		@include skewY(skewy(7deg));
+		position: absolute;
+		right: 0;
+		bottom: 130px;
+	}
+	.wrapper{
+		padding: 140px 0;
+		color: $wh;
+		@include skewY (skewY(-6deg));
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+		//background-attachment: fixed;
+		> .reskew{
+			@include skewY (skewY(6deg));
+		}
+	}
+}
+/* End Skew-section */
+
+
+
+
+
+
+
+
+
+/* Start Landing */
+.landing{
+	.wrapper{
+		color: $wh;
+		@include skewY;
+		background-image: url('../imgs/bg.jpg');
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center top;
+		background-attachment: fixed;
+	}
+	.container{padding-top: 220px;}
+	.title{
+		font-family: $bold-font;
+		font-size: $h4-size - 2;
+		text-transform: uppercase;
+		margin-bottom: $baseline * 2;
+	}
+	.big-logo{
+		margin-left: -30px;
+		margin-bottom: $baseline * 4;
+	}
+	.description{
+		margin-bottom: $baseline * 6;
+	}
+	.scroll{
+		margin-bottom: $baseline * 2;
+	}
+}
+/* End Landing */
+
+
+
+
+
+
+
+
+
+/* Start About */
+.nav-tabs{
+	@include skewX;
+	border-bottom: none;
+	margin-bottom: $baseline * 3;
+	.tab-item{
+		a{
+			color: $dark-grey;
+			background-color: $light-grey;
+			border: none;
+			border-radius: 0;
+			margin-right: 1px;
+		    padding: 12px 24px;
+			text-transform: uppercase;
+			&:hover, &:focus{border: none;}
+		}
+		&.active{
+			a{
+				color: $wh;
+				background-color: $main-color;
+				border: none;
+				&:hover, &:focus{
+					color: $wh;
+					background-color: $main-color;
+					border: none;
+				}
+			}
+		}
+	}
+}
+/* End About */
+
+
+
+/* Start Team */
+.team{
+	.wrapper{
+		color: $wh;
+		background-image: url('../imgs/bg-team.jpg');
+	}
+}
+/* End Team */

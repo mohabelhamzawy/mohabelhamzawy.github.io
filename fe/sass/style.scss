@@ -1,0 +1,35 @@
+//[A] Helpers Styles
+	//[a.1]VARIABLES
+		@import 'helpers/_variables';
+	//[a.2]MIXINS
+		@import 'helpers/_mixins';
+
+//[B] Plugins Styles
+	//[b.1]BOOTSTRAP
+		@import 'plugins/bootstrap/_bootstrap';
+	//[b.2]FONT-AWESOME
+		@import 'plugins/font-awesome/_font-awesome';
+
+//[C] Basics Styles
+	//[c.1]NORMALIZE
+		@import 'basics/_normalize';
+	//[c.2]FONTS
+		@import 'basics/_fonts';
+	//[c.3]TYPOGRAPHY
+		@import 'basics/_typography';
+	//[c.4]GLOBAL
+		@import 'basics/_global';
+
+
+//[D] Components STYLES
+	//[d.1]GRID ITEMS
+		@import 'components/_grid-items';
+		@import 'components/_members';
+	
+
+//[E] Parts STYLES
+	//[e.1]CUSTOM
+		@import 'parts/_header';
+		@import 'parts/_footer.scss';
+		@import 'parts/_custom';
+		@import 'parts/_test';

@@ -1,0 +1,38 @@
+//[1]TRANSFORMS
+	@mixin transform ($value){
+		-webkit-transform: $value;
+			-ms-transform: $value;
+				transform: $value;
+	}
+	@mixin skewX ($value: skewX(-20deg)) {
+		-webkit-transform: $value;
+			-ms-transform: $value;
+				transform: $value;
+	}
+	@mixin skewY ($value: skewY(-10deg)) {
+		-webkit-transform: $value;
+			-ms-transform: $value;
+				transform: $value;
+	}
+
+	@mixin flex(){
+		display: -webkit-box;
+		display: -moz-box;
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+	}
+	@mixin flex-inner($value: 1){
+		-webkit-box-flex: $value;
+		-moz-box-flex: $value;
+		-webkit-flex: $value;
+		-ms-flex: $value;
+		flex: $value;
+	}
+//[1]TRANSITIONS
+	@mixin transitions ($what: all, $length: .3s, $easing: ease-in-out) {
+		-webkit-transition: $what $length $easing;
+				transition: $what $length $easing;
+	}

@@ -1,0 +1,35 @@
+/* Start Header */
+.main-hdr{
+	display: none;
+	background-color: $tr;
+	padding: 10px 0;
+	position: fixed;
+	width: 100%;
+	z-index: 5;
+	background-color: #333;
+	.logo{
+		float: left;
+	}
+
+	.nav-item{
+		display: inline-block;
+		a{
+			color: $wh;
+			line-height: 64px;
+			margin: 0 10px;
+			padding: 0 10px;
+			text-transform: capitalize;
+			&:hover{
+				color: $primary-color;
+				background-color: $tr;
+			}
+		}
+		&:last-child{
+			a{
+				margin-right: 0;
+				padding-right: 0;
+			}
+		}
+	}
+}
+/* End Header */

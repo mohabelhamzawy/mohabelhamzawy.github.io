@@ -1,0 +1,23 @@
+.mohab{
+	position: relative;
+	.skew{
+		width: 50%;
+		height: 230px;
+		background-color: rebeccapurple;					
+		@include skewY(skewy(10deg));
+		position: absolute;
+		right: 0;
+		bottom: 0;
+	}
+	.wrap{
+		background-color: red;
+		background-image: url('../imgs/bg-team.jpg');
+		background-attachment: fixed;
+		@include skewY;
+		padding: 200px 0;
+
+		.re{
+			@include skewY(skewy(10deg));
+		}
+	}
+}
