@@ -6,6 +6,7 @@
 		display: inline-block;
 		width: 180px;
 		height: 180px;
+		margin-bottom: $baseline * 1.5;
 		border-radius: 100%;
 		overflow: hidden;
 		.social-hover{
@@ -32,6 +33,11 @@
 				}
 			}
 		}
+		&:hover{
+			.social-hover{
+				display: block;
+			}
+		}
 	}
 	.member-info{
 		.name{
@@ -39,17 +45,15 @@
 			font-size: $h4-size - 4;
 			text-transform: uppercase;
 		}
-	}
-	&:hover{
-		.member-img{
-			.social-hover{
-				display: block;
-				.list{}
-				a{
-					&:hover{
-					}
-				}
-			}
+		.job{
+			font-family: $main-font;
+			color: $main-color;
+			text-transform: capitalize;
+			margin-bottom: $main-space;
+		}
+		.description{
+			color: $wh;
+			font-size: $h6-size;
 		}
 	}
 }
