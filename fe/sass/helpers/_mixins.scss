@@ -31,8 +31,17 @@
 		-ms-flex: $value;
 		flex: $value;
 	}
-//[1]TRANSITIONS
+
+
+//[2]TRANSITIONS
 	@mixin transitions ($what: all, $length: .3s, $easing: ease-in-out) {
 		-webkit-transition: $what $length $easing;
 				transition: $what $length $easing;
+	}
+//[3]ANIMATION
+	@mixin animations ($name, $time: 1s, $type: infinite) {
+		-webkit-animation: $name $time $type; /* Safari 4+ */
+		-moz-animation:    $name $time $type; /* Fx 5+ */
+		-o-animation:      $name $time $type; /* Opera 12+ */
+		animation:         $name $time $type; /* IE 10+, Fx 29+ */
 	}

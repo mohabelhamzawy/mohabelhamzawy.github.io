@@ -1,0 +1,16 @@
+@-webkit-keyframes scroll-animation {
+	0%, 100%	{top: -6px;}
+	50% 		{top: 6px;}
+}
+@-moz-keyframes scroll-animation {
+	0%, 100%	{top: -6px;}
+	50% 		{top: 6px;}
+}
+@-o-keyframes scroll-animation {
+	0%, 100%	{top: -6px;}
+	50% 		{top: 6px;}
+}
+@keyframes scroll-animation {
+	0%, 100%	{top: -6px;}
+	50% 		{top: 6px;}
+}

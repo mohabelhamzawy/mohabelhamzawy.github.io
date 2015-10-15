@@ -56,10 +56,13 @@
 		margin-bottom: $baseline * 4;
 	}
 	.description{
+		color: $wh;
 		margin-bottom: $baseline * 6;
 	}
 	.scroll{
+		position: relative;
 		margin-bottom: $baseline * 2;
+		@include animations (scroll-animation);
 	}
 }
 /* End Landing */
@@ -112,5 +115,39 @@
 		color: $wh;
 		background-image: url('../imgs/bg-team.jpg');
 	}
+	.section-hdr-wrapper{
+		.title{
+			span{color: $wh;}
+			.hint{color: $wh;}
+		}
+		.mini-des{color: $wh;}
+	}
 }
 /* End Team */
+
+
+
+
+
+
+/* Start Services */
+.services{
+	.content-hdr{
+		color: $second-color;
+	}
+}
+/* End Services */
+
+
+
+
+/* Start Work */
+.work{
+	.section-hdr-wrapper{
+		.title{
+			.hint{color: $txt-dark-grey;}
+		}
+		.mini-des{color: $txt-dark-grey;}
+	}
+}
+/* End Work */

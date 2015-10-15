@@ -39,22 +39,13 @@
 				text-align: center;
 				color: $wh;
 				background-color: $light-grey;
-				font-size: $font-size * 4.5;
+				font-size: $font-size * 4.2;
 				@include skewX (skewX(-10deg));
 				@include transitions;
 				.fa{
 					line-height: 100px;
 					@include skewX (skewX(10deg));
 				}
-			}
-		}
-		.content-txt{
-			@include flex-inner (3.5);
-			.content-hdr{
-				color: $dark-grey;
-				font-family: $bold-font;
-			}
-			.content-txt{
 			}
 		}
 		&:hover{
@@ -64,5 +55,13 @@
 				}
 			}
 		}
+	}
+	.content-txt{
+		@include flex-inner (3.5);
+	}
+	.content-hdr{
+		color: $dark-grey;
+		font-family: $bold-font;
+		text-transform: capitalize;
 	}
 }

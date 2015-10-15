@@ -62,14 +62,14 @@ body{
 			}
 			&:before{
 				width: 6px;
-				height: 60%;
+				height: 40%;
 				background-color: $main-color;
-				top: 30px;
+				top: 50px;
 				right: -16px;
 			}
 		}
 		.mini-des{
-			padding-top: $line-height * 2;
+			padding-top: $line-height * 3;
 		}
 	}
 }
