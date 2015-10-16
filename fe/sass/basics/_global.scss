@@ -4,9 +4,6 @@
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 }
-body{
-	padding-bottom: 2000px;
-}
 .dotted{
 	background-image: url('../imgs/dot.png');
 	background-repeat: repeat;
@@ -26,11 +23,11 @@ body{
 	.section-hdr-wrapper{
 		.title{
 			float: left;
+			width: 300px;
 			color: $primary-color;
 			text-transform: uppercase;
 			font-family: $black-font;
 			margin-right: 50px;
-			padding-right: 100px;
 			padding-top: 10px;
 			padding-bottom: 25px;
 			border-right: 2px solid $primary-color;
@@ -73,9 +70,12 @@ body{
 		}
 	}
 }
+/* End Global */
 
-/* Start Global */
-
+// Helpers
+	.no-padding{
+		padding: 0;
+	}
 
 
 

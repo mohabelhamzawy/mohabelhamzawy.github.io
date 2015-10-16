@@ -1,0 +1,66 @@
+// FORMS
+.form{
+	//@include flex;
+
+	/* .one, .two{
+		//@include flex-inner;
+		display: inline-block;
+		width: 50%;
+	} */
+}
+.form-item{
+	width: 100%;
+	max-width: 100%;
+	margin-bottom: 10px;
+	padding: 12px;
+	font-size: 14px;
+	color: $txt-grey;
+	background-color: #fff;
+	background-image: none;
+	border: 1px solid #ccc;
+	&:focus{
+		outline: 2px solid $primary-color;
+	}
+
+	&.btn{
+		width: auto;
+		padding: 12px 20px;
+		background-color: $primary-color;
+		color: $wh;
+		border: none;
+		text-transform: capitalize;
+
+		&:hover, &:focus{
+			background-color: darken($primary-color, 5%);
+		}
+
+	}
+}
+
+textarea.form-item{
+	min-height: 150px;
+}
+
+::-webkit-input-placeholder {
+	color: #cccccc;
+	font-family: $main-font;
+	text-transform: capitalize;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+	color: #cccccc;
+	font-family: $main-font;
+	text-transform: capitalize;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+	color: #cccccc;
+	font-family: $main-font;
+	text-transform: capitalize;
+}
+
+:-ms-input-placeholder {  
+	color: #cccccc;
+	font-family: $main-font;
+	text-transform: capitalize;
+}

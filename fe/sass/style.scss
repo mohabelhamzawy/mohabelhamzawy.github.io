@@ -11,6 +11,9 @@
 		@import 'plugins/bootstrap/_bootstrap';
 	//[b.2]FONT-AWESOME
 		@import 'plugins/font-awesome/_font-awesome';
+	//[b.2]SLICK
+		@import 'plugins/_slick';
+		//@import 'plugins/_slick-theme';
 
 //[C] Basics Styles
 	//[c.1]NORMALIZE
@@ -26,7 +29,12 @@
 //[D] Components STYLES
 	//[d.1]GRID ITEMS
 		@import 'components/_grid-items';
+	//[d.2]GRID MEMBERS
 		@import 'components/_members';
+	//[d.3]GRID FORM
+		@import 'components/_form';
+	//[d.4]GRID SLIDER
+		@import 'components/_slider';
 	
 
 //[E] Parts STYLES

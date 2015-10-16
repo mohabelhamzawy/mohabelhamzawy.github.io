@@ -410,6 +410,30 @@
 
 
 		<!-- Start Twitter -->
+			<div class="section slider-section twitter" id="twitter">
+				<div class="skew"></div>
+				<div class="wrapper">
+					<div class="reskew text-center">
+						<i class="icon fa fa-twitter"></i>
+						<!-- Slider -->
+						<div class="slider">
+							<div class="slider-item">
+								<p class="slider-txt">Premium Template - orci in adipiscing felis velit nibh. Consectetuer porttitor feugiat vestibulum sit feugiat, voluptates dui eros libero...</p>
+							</div>
+							<div class="slider-item">
+								<p class="slider-txt">Premium Template - orci in adipiscing felis velit nibh. Consectetuer porttitor feugiat vestibulum sit feugiat, voluptates dui eros libero...</p>
+							</div>
+							<div class="slider-item">
+								<p class="slider-txt">Premium Template - orci in adipiscing felis velit nibh. Consectetuer porttitor feugiat vestibulum sit feugiat, voluptates dui eros libero...</p>
+							</div>
+							<div class="slider-item">
+								<p class="slider-txt">Premium Template - orci in adipiscing felis velit nibh. Consectetuer porttitor feugiat vestibulum sit feugiat, voluptates dui eros libero...</p>
+							</div>
+						</div>
+						<p class="follow">Follow us on Twitter: <a href="#">@rudhisasmito</a></p>
+					</div>
+				</div>
+			</div>
 		<!-- End Twitter -->
 
 
@@ -448,6 +472,37 @@
 
 
 		<!-- Start Quote -->
+			<div class="section slider-section quote" id="quote">
+				<div class="skew"></div>
+				<div class="wrapper">
+					<div class="reskew text-center">
+						<i class="icon fa fa-quote-right"></i>
+						<!-- Slider -->
+						<div class="slider">
+							<div class="slider-item">
+								<p class="slider-txt">Premium Template - orci in adipiscing felis velit nibh. Consectetuer porttitor feugiat vestibulum sit feugiat, voluptates dui eros libero...
+								</p>
+								<span class="speaker">Rudhi Sasmito - CEO Company</span>
+							</div>
+							<div class="slider-item">
+								<p class="slider-txt">Premium Template - orci in adipiscing felis velit nibh. Consectetuer porttitor feugiat vestibulum sit feugiat, voluptates dui eros libero...
+								</p>
+								<span class="speaker">Rudhi Sasmito - CEO Company</span>
+							</div>
+							<div class="slider-item">
+								<p class="slider-txt">Premium Template - orci in adipiscing felis velit nibh. Consectetuer porttitor feugiat vestibulum sit feugiat, voluptates dui eros libero...
+								</p>
+								<span class="speaker">Rudhi Sasmito - CEO Company</span>
+							</div>
+							<div class="slider-item">
+								<p class="slider-txt">Premium Template - orci in adipiscing felis velit nibh. Consectetuer porttitor feugiat vestibulum sit feugiat, voluptates dui eros libero...
+								</p>
+								<span class="speaker">Rudhi Sasmito - CEO Company</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 		<!-- End Quote -->
 
 
@@ -464,6 +519,51 @@
 						<p class="mini-des">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit quasi numquam neque animi, quas vitae ab accusamus eaque. Nemo, ipsum.</p>
 					</div>
 				</div>
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-7">
+							<form class="form" action="">
+							<div class="row" action="">
+								<div class="col-xs-6">
+									<input type="text" class="form-item" placeholder="name">
+								</div>
+								<div class="col-xs-6">
+									<input type="email" class="form-item" placeholder="email">
+								</div>
+								<div class="col-xs-12">
+									<input type="text" class="form-item" placeholder="subject">
+								</div>
+								<div class="col-xs-12">
+									<textarea class="form-item" placeholder="message"></textarea>
+								</div>
+								<div class="col-xs-12">
+									<button type="submit" class="form-item btn">send message</button>
+								</div>
+							</div>
+							</form>
+						</div>
+						<div class="col-xs-5">
+							<div class="information">
+								<h5 class="title">additional info</h5>
+								<p class="description">If you have any questiong about our products or something else, please email us or call us. We'll get in touch with you as soon as possible.</p>
+								<ul class="list-unstyled list">
+									<li>
+										<p class="icon map">Jl. Pahlawan VII No. 247D Sidoarjo</p>
+									</li>
+									<li>
+										<p class="icon phone">+62 - 85745965973</p>
+									</li>
+									<li>
+										<p class="icon message">rudhisasmito@gmail.com</p>
+									</li>
+									<li>
+										<p class="icon time">Mo - Fr: 9am to 6pm</p>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 		<!-- End Contact -->
 
@@ -473,10 +573,32 @@
 
 
 		<!-- Start Footer -->
+			<footer>
+				<ul class="ftr-social-media list-inline">
+					<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+					<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+					<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+					<li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+					<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+					<li><a href="#"><i class="fa fa-behance"></i></a></li>
+					<li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+				</ul>
+				<p class="copyrights">&copy; 2015 <span>fe</span> All rights reserved. Theme by <a href="#">Mohab El-Hamzawy</a>.</p>
+			</footer>
 		<!-- End Footer -->
 		<script src="js/plugins.min.js"></script>
-		<script>
-
+		<script type="text/javascript">
+			var bodyy = document.body;
+			//bodyy.style.backgroundColor = 'red';
+			$(document).ready(function(){
+				$('.slider').slick({
+					autoplay: true,
+					autoplaySpeed: 3200,
+					prevArrow: false,
+					nextArrow: false,
+					dots: true,
+				});
+			});
 		</script>
 	</body>
 </html>

@@ -38,7 +38,8 @@ module.exports = function(grunt) {
 			concat: {
 				files:[
 					'js/vendor/jquery-1.11.2.min.js',
-					'js/plugins/bootstrap.min.js'
+					'js/plugins/bootstrap.min.js',
+					'js/plugins/slick.min.js'
 
 
 				],
@@ -113,7 +114,8 @@ module.exports = function(grunt) {
 			dist: {
 				src: [
 				'js/vendor/jquery-1.11.2.min.js',
-				'js/plugins/bootstrap.min.js'
+				'js/plugins/bootstrap.min.js',
+				'js/plugins/slick.min.js'
 
 				],
 				dest: 'js/plugins.js',
