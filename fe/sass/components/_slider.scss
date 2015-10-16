@@ -5,6 +5,7 @@
 	.slider-item{
 		outline: none;
 		cursor: all-scroll;
+		margin: 0 10px;
 		margin-bottom: $main-space * 1.5;
 	}
 	.slider-txt{
@@ -14,6 +15,7 @@
 		margin-bottom: $main-space * 2;
 	}
 	.slick-dots{
+		text-align: center;
 		padding: 0;
 		margin: 0;
 		li{

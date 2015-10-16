@@ -181,6 +181,31 @@
 /* End Twitter */
 
 
+
+/* Start Testimonial */
+.testimonial{
+	.clients{
+		text-align: center;
+		margin-bottom: $main-space * 3;
+
+		.client{
+			display: inline-block;
+			vertical-align: middle;
+			margin: 0 30px;
+			opacity: .5;
+			@include transitions (all, .2s);
+
+			&:hover{
+				opacity: 1;
+			}
+		}
+	}
+}
+/* End Testimonial */
+
+
+
+
 /* Start Quote */
 .quote{
 	.wrapper{
