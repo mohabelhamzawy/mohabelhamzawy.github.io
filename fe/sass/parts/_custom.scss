@@ -198,6 +198,7 @@
 		}
 		.number{
 			font-family: $light-font;
+			@include transitions;
 			font-size: 52px;
 		}
 	}
