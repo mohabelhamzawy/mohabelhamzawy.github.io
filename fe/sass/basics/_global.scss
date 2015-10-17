@@ -71,7 +71,25 @@
 		}
 	}
 }
-/* End Global */
+.sub-section{
+	background-color: $light-grey-2;
+	//background-color: red;
+	padding: 128px 0 200px 0;
+	.sub-section-hdr{
+		width: 55%;
+		margin: auto;
+		margin-bottom: 70px;
+		text-align: center;
+		.title{
+			font-size: $h4-size;
+			text-transform: uppercase;
+			margin-bottom: 55px;
+		}
+		.mini-des{
+			color: $txt-dark-grey;
+		}
+	}
+}
 hr{
 	outline: none;
 	border: none;
@@ -82,74 +100,4 @@ hr{
 		padding: 0;
 	}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Start Skills */
-/* End Skills */
-
-
-/* Start Team */
-/* End Team */
-
-
-/* Start Services */
-/* End Services */
-
-
-/* Start Facts */
-/* End Facts */
-
-
-/* Start Work */
-/* End Work */
-
-
-/* Start Recent Work */
-/* End Recent Work */
-
-
-/* Start Twitter */
-/* End Twitter */
-
-
-/* Start Testimonial */
-/* End Testimonial */
-
-
-/* Start Pricing */
-/* End Pricing */
-
-
-/* Start Quote */
-/* End Quote */
-
-
-/* Start Contact */
-/* End Contact */
-
-
-/* Start Map */
-/* End Map */
-
-
-/* Start Footer */
-/* End Footer */
+/* End Global */

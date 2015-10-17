@@ -1,0 +1,15 @@
+// SKILLS
+.skill{
+	text-align: center;
+	margin-bottom: $main-space;
+	canvas{
+		margin-bottom: $main-space;
+	}
+	.title{
+		color: $dark-grey;
+		font-family: $bold-font;
+		text-transform: uppercase;
+		margin-bottom: $main-space / 2;
+	}
+	.description{}
+}

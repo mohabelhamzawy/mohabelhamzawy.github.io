@@ -122,8 +122,21 @@
 
 
 
+
+
+/* Start Skills */
+.skills{
+	padding-bottom: 350px;
+}
+/* Start Skills */
+
+
+
+
+
 /* Start Team */
 .team{
+	margin-top: -400px;
 	.wrapper{
 		color: $wh;
 		background-image: url('../imgs/bg-team.jpg');
@@ -154,6 +167,49 @@
 
 
 
+
+
+/* End Facts */
+.facts{
+	.fact-list{
+		text-align: center;
+		li{
+			display: block;
+			float: left;
+			width: 25%;
+			margin: 0;
+			padding: $main-space * 2 0;
+			color: $dark-grey;
+			border: 1px solid $border;
+			background-color: $wh;
+			line-height: normal;
+			&:not(:last-child){
+				border-right: none;
+			}
+		}
+		.icon{
+			font-size: 80px;
+		}
+		.fact, .number{display: block;}
+		.fact{
+			color: $main-color;
+			line-height: $line-height * 2;
+			text-transform: capitalize;
+		}
+		.number{
+			font-family: $light-font;
+			font-size: 52px;
+		}
+	}
+}
+/* End Facts */
+
+
+
+
+
+
+
 /* Start Work */
 .work{
 	.section-hdr-wrapper{
@@ -166,8 +222,23 @@
 /* End Work */
 
 
+
+
+
+/* End Recent-work */
+.recent-work{
+	padding-bottom: 350px;
+}
+/* End Recent-work */
+
+
+
+
+
+
 /* Start Twitter */
 .twitter{
+	margin-top: -400px;
 	.wrapper{
 		background-image: url('../imgs/bg-team.jpg');
 
@@ -202,6 +273,73 @@
 	}
 }
 /* End Testimonial */
+
+
+
+/* Start Pricing */
+.pricing-list{
+	text-align: center;
+	line-height: normal;
+	li{
+		margin: $main-space 0;
+	}
+	.price-head{
+		.title{
+			color: $wh;
+			background-color: $primary-color;
+			text-transform: capitalize;
+			font-family: $bold-font;
+			padding: 25px;
+		}
+	}
+	.price-package{
+		color: $dark-grey;
+		font-size: 60px;
+		font-family: $bold-font;
+		margin: $main-space * 2 0;
+		.number{
+			position: relative;
+			padding-left: 20px;
+			&:before{
+				content: '$';
+				font-size: $h3-size;
+				position: absolute;
+				top: 10px;
+				left: 0;
+			}
+			&:after{
+				content: '/mo';
+				font-family: $main-font;
+				font-size: $h4-size;
+			}
+		}
+	}
+	.price-item{}
+	.price-order{
+		text-transform: uppercase;
+		font-family: $bold-font;
+		font-size: $h6-size;
+		margin-top: $main-space * 2;
+		a{
+			color: $txt-grey;
+			border: 1px solid $txt-grey;
+			border-radius: 4px;
+			padding: $main-space - 5 $main-space;
+			@include transitions (all, .2s);
+			&:hover{
+				color: $wh;
+				background-color: $primary-color;
+				border-color: $primary-color;
+			}
+		}
+	}
+	.price-trial{
+		color: $txt-grey;
+		text-transform: uppercase;
+		font-size: $h6-size;
+	}
+}
+/* End Pricing */
 
 
 
@@ -283,3 +421,10 @@
 	}
 }
 /* End Contact */
+
+
+
+
+
+/* End Map */
+/* End Map */
