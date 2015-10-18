@@ -41,7 +41,8 @@ module.exports = function(grunt) {
 					'js/plugins/bootstrap.min.js',
 					'js/plugins/slick.min.js',
 					'js/plugins/jquery.classyloader.min.js',
-					'js/plugins/jquery.countTo.js'
+					'js/plugins/jquery.countTo.js',
+					'js/plugins/jquery.mixitup.js'
 
 
 				],
@@ -85,7 +86,8 @@ module.exports = function(grunt) {
 				'js/plugins/bootstrap.min.js',
 				'js/plugins/slick.min.js',
 				'js/plugins/jquery.classyloader.min.js',
-				'js/plugins/jquery.countTo.js'
+				'js/plugins/jquery.countTo.js',
+				'js/plugins/jquery.mixitup.js'
 
 				],
 				dest: 'js/plugins.js',

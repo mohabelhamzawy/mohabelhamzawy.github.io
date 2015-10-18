@@ -10,6 +10,7 @@
 	background-repeat: repeat;
 	height: 100%;
 }
+.section, .sub-section{}
 .skew-section{
 	background-color: $primary-color;
 	@include transform(skewY(5deg) translate(0,-75px));

@@ -1,0 +1,70 @@
+// FILTERS
+.filters{
+	text-align: center;
+	.filters-tab{
+		li{
+			display: inline-block;
+			cursor: pointer;
+			color: $txt-dark-grey;
+			border: 1px solid $border;
+			padding: $main-space / 2 $main-space;
+			text-transform: capitalize;
+			border-radius: 3px;
+			margin: 0 3px;
+			.active{
+				background-color: #f1f1f1;
+				cursor: auto;
+			}
+		}
+	}
+	.filters-content{
+		.img{
+			background-color: red;
+			width: 100%;
+			height: 200px;
+			background-image: url("../imgs/filters/design-02.jpg");
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: center;
+			overflow: hidden;
+			position: relative;
+			.hover{
+				width: 100%;
+				height: 100%;
+				background-color: $tr;
+				@include transitions (all, 0.2s);
+				position: relative;
+				a{
+					color: #b1afad;
+					font-size: 25px;
+					position: absolute;
+					top: -25px;
+					&:hover{
+						color: $main-color;
+					}
+					&.search{
+						left: 35%;
+						@include transitions (all, 0.4s);
+					}
+					&.link{
+						right: 35%;
+						@include transitions (all, 0.2s);
+					}
+				}
+			}
+
+			&:hover{
+				.hover{
+					background-color: rgba(0, 0, 0, 0.8);
+					a{
+						top: 50%;
+						bottom: 50%;
+					}
+				}
+			}
+
+		}
+		.title{}
+		.mini-desciption{}
+	}
+}

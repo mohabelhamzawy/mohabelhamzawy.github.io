@@ -672,7 +672,112 @@
 					<h4 class="title">additional recent work</h4>
 					<p class="mini-des">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit quasi numquam neque animi, quas vitae ab accusamus eaque. Nemo, ipsum.</p>
 				</div>
-				<div class="container"></div>
+				<div class="container">
+					<div class="filters">
+						<ul class="filters-tab">
+							<li class="filter" data-filter="all">all</li>
+							<li class="filter" data-filter=".website">websites</li>
+							<li class="filter" data-filter=".graphic">graphics</li>
+							<li class="filter" data-filter=".identity">identity</li>
+							<li class="filter" data-filter=".app">mobile apps</li>
+						</ul>
+
+						<div class="filters-content">
+							<div id="filters" class="row">
+								<div class="col-xs-4 mix app">
+									<div class="img app-01">
+										<div class="hover">
+											<a href="#" class="search"><i class="fa fa-search"></i></a>
+											<a href="#" class="link"><i class="fa fa-link"></i></a>
+										</div>
+									</div>
+									<h5 class="title">outfield</h5>
+									<p class="mini-desciption">mobile intercation CRM for field reps</p>
+								</div>
+								<div class="col-xs-4 mix website">
+									<div class="img website-01">
+										<div class="hover">
+											<a href="#" class="search"><i class="fa fa-search"></i></a>
+											<a href="#" class="link"><i class="fa fa-link"></i></a>
+										</div>
+									</div>
+									<h5 class="title">outfield</h5>
+									<p class="mini-desciption">mobile intercation CRM for field reps</p>
+								</div>
+								<div class="col-xs-4 mix graphic">
+									<div class="img graphic-01">
+										<div class="hover">
+											<a href="#" class="search"><i class="fa fa-search"></i></a>
+											<a href="#" class="link"><i class="fa fa-link"></i></a>
+										</div>
+									</div>
+									<h5 class="title">outfield</h5>
+									<p class="mini-desciption">mobile intercation CRM for field reps</p>
+								</div>
+								<div class="col-xs-4 mix identity">
+									<div class="img identity">
+										<div class="hover">
+											<a href="#" class="search"><i class="fa fa-search"></i></a>
+											<a href="#" class="link"><i class="fa fa-link"></i></a>
+										</div>
+									</div>
+									<h5 class="title">outfield</h5>
+									<p class="mini-desciption">mobile intercation CRM for field reps</p>
+								</div>
+								<div class="col-xs-4 mix graphic">
+									<div class="img graphic-02">
+										<div class="hover">
+											<a href="#" class="search"><i class="fa fa-search"></i></a>
+											<a href="#" class="link"><i class="fa fa-link"></i></a>
+										</div>
+									</div>
+									<h5 class="title">outfield</h5>
+									<p class="mini-desciption">mobile intercation CRM for field reps</p>
+								</div>
+								<div class="col-xs-4 mix identity">
+									<div class="img identity">
+										<div class="hover">
+											<a href="#" class="search"><i class="fa fa-search"></i></a>
+											<a href="#" class="link"><i class="fa fa-link"></i></a>
+										</div>
+									</div>
+									<h5 class="title">outfield</h5>
+									<p class="mini-desciption">mobile intercation CRM for field reps</p>
+								</div>
+								<div class="col-xs-4 mix website">
+									<div class="img website-02">
+										<div class="hover">
+											<a href="#" class="search"><i class="fa fa-search"></i></a>
+											<a href="#" class="link"><i class="fa fa-link"></i></a>
+										</div>
+									</div>
+									<h5 class="title">outfield</h5>
+									<p class="mini-desciption">mobile intercation CRM for field reps</p>
+								</div>
+								<div class="col-xs-4 mix app">
+									<div class="img app-02">
+										<div class="hover">
+											<a href="#" class="search"><i class="fa fa-search"></i></a>
+											<a href="#" class="link"><i class="fa fa-link"></i></a>
+										</div>
+									</div>
+									<h5 class="title">outfield</h5>
+									<p class="mini-desciption">mobile intercation CRM for field reps</p>
+								</div>
+								<div class="col-xs-4 mix graphic">
+									<div class="img graphic-03">
+										<div class="hover">
+											<a href="#" class="search"><i class="fa fa-search"></i></a>
+											<a href="#" class="link"><i class="fa fa-link"></i></a>
+										</div>
+									</div>
+									<h5 class="title">outfield</h5>
+									<p class="mini-desciption">mobile intercation CRM for field reps</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 		<!-- End Recent Work -->
 
@@ -1105,6 +1210,10 @@
 					refreshInterval: 	50,
 				});
 				
+			// [4] Filteration options
+			$(function(){
+				$('#filters').mixItUp();
+			});
 			
 
 			});
