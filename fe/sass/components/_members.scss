@@ -10,20 +10,17 @@
 		border-radius: 100%;
 		overflow: hidden;
 		.social-hover{
-			width: 180px;
-			height: 180px;
-			background-color: rgba(0, 0, 0, 0.89);
-			position: absolute;
-			top: 0;
-			left: 0;
-			z-index: 10;
+			width: 100%;
+			height: 100%;
+			background-color: $tr;
 			@include transitions;
-			display: none;
+			position: relative;
 			.list{
-				position: absolute;
-				top: 50%;
 				transform: translateY(-50%);
 				width: 100%;
+				@include transitions;
+				position: absolute;
+				top: -50%;
 			}
 			a{
 				color: $wh;
@@ -35,9 +32,16 @@
 		}
 		&:hover{
 			.social-hover{
-				display: block;
+				background-color: rgba(0, 0, 0, 0.80);
+				.list{
+					top: 50%;
+				}
 			}
 		}
+		&.member-01{background-image: url("../imgs/members/member-01.jpg");}
+		&.member-02{background-image: url("../imgs/members/member-02.jpg");}
+		&.member-03{background-image: url("../imgs/members/member-03.jpg");}
+		&.member-04{background-image: url("../imgs/members/member-04.jpg");}
 	}
 	.member-info{
 		.name{
