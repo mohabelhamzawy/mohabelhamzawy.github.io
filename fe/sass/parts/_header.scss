@@ -23,11 +23,19 @@
 				color: $primary-color;
 				background-color: $tr;
 			}
+			&:focus{
+				background-color: $tr;
+			}
 		}
 		&:last-child{
 			a{
 				margin-right: 0;
 				padding-right: 0;
+			}
+		}
+		&.active{
+			a{
+				
 			}
 		}
 	}

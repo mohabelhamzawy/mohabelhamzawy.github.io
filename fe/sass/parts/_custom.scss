@@ -220,6 +220,7 @@
 
 /* Start Work */
 .work{
+	padding-bottom: 0;
 	.section-hdr-wrapper{
 		.title{
 			.hint{color: $txt-dark-grey;}
@@ -339,7 +340,7 @@
 			color: $txt-grey;
 			border: 1px solid $txt-grey;
 			border-radius: 4px;
-			padding: $main-space - 5 $main-space;
+			padding: $main-space - 8 $main-space;
 			@include transitions (all, .2s);
 			&:hover{
 				color: $wh;
