@@ -6,13 +6,13 @@
 		<link rel="shortcut icon" href="imgs/favicon/favicon.ico">
 		<link rel="stylesheet" href="css/style.css">
 	</head>
-	<body>
+	<body  data-spy="scroll" data-target="#navbar-example">
 		<!-- Start Header -->
 			<header class="main-hdr">
-				<div class="container">
+				<div class="container" id="navbar-example">
 					<a href="#" class="logo"><img src="imgs/logo.png" alt=""></a>
 					<ul class="nav text-right">
-						<li class="nav-item"><a href="#">home</a></li>
+						<li class="nav-item active"><a href="#start">home</a></li>
 						<li class="nav-item"><a href="#about">about us</a></li>
 						<li class="nav-item"><a href="#services">products</a></li>
 						<li class="nav-item"><a href="#testimonial">testimonial</a></li>
@@ -24,7 +24,7 @@
 
 
 		<!-- Start Landing -->
-			<div class="skew-section landing">
+			<div class="skew-section landing" id="start">
 				<div class="wrapper">
 					<div class="dotted">
 						<div class="container text-center">
@@ -982,6 +982,36 @@
 								</div>
 							</div>
 						</div>
+						<div class="slider-item">
+							<div class="review">
+								<p class="review-txt">"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi at recusandae neque dolorum."</p>
+								<hr>
+								<div class="reviewer">
+									<div class="reviewer-img">
+										<img src="imgs/reviewer.jpg" alt="">
+									</div>
+									<div class="reviewer-name">
+										<a href="#" class="name">@mohabelhamzawy</a>
+										<span class="position">someone famous</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="slider-item">
+							<div class="review">
+								<p class="review-txt">"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi at recusandae neque dolorum."</p>
+								<hr>
+								<div class="reviewer">
+									<div class="reviewer-img">
+										<img src="imgs/reviewer.jpg" alt="">
+									</div>
+									<div class="reviewer-name">
+										<a href="#" class="name">@mohabelhamzawy</a>
+										<span class="position">someone famous</span>
+									</div>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -1200,7 +1230,7 @@
 					prevArrow: 			false,
 					nextArrow: 			false,
 					dots: 				true,
-					slidesToScroll: 	1,
+					slidesToScroll: 	2,
 					slidesToShow: 		3,
 				});
 
@@ -1262,6 +1292,35 @@
 			// [4] Filteration options
 			$(function(){
 				$('#filters').mixItUp();
+			});
+
+			// [4] Nice Scroll options
+			$("html").niceScroll({
+				cursorcolor: '#000',
+				cursorborder: 'none',
+				cursorwidth: 8,
+				// cursorheight: 70,
+				// cursorborderradius: 0,
+				// scrollspeed: 100,
+				cursoropacitymin: 1,
+				cursoropacitymax: 1,
+				zindex: 999999,
+			});
+
+			// [5] Smooth Scroll options
+			$(function() {
+				$('a[href*=#]:not([href=#]):not([data-toggle="tab"])').click(function() {
+					if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+						var target = $(this.hash);
+						target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+						if (target.length) {
+							$('html,body').animate({
+								scrollTop: target.offset().top
+							}, 1000);
+							return false;
+						}
+					}
+				});
 			});
 			
 
