@@ -92,7 +92,6 @@
 /* Start About */
 .about{
 	margin-top: -80px;
-	padding-top: 220px;
 }
 .nav-tabs{
 	@include skewX;
@@ -131,7 +130,7 @@
 
 /* Start Skills */
 .skills{
-	padding-bottom: 350px;
+	padding-bottom: 450px;
 }
 /* Start Skills */
 
@@ -164,8 +163,8 @@
 
 /* Start Services */
 .services{
-	margin-top: -220px;
-	padding-top: 360px;
+	//margin-top: -220px;
+	//padding-top: 360px;
 	.content-hdr{
 		color: $second-color;
 	}
@@ -265,8 +264,8 @@
 
 /* Start Testimonial */
 .testimonial{
-	margin-top: -220px;
-	padding-top: 360px;
+	//margin-top: -220px;
+	//padding-top: 360px;
 	.clients{
 		text-align: center;
 		margin-bottom: $main-space * 3;
@@ -393,8 +392,8 @@
 
 /* End Contact */
 .contact{
-	margin-top: -220px;
-	padding-top: 360px;
+	//margin-top: -220px;
+	//padding-top: 360px;
 	.information{
 		p, ul{
 			color: $txt-dark-grey;
@@ -460,10 +459,13 @@
 }
 
 .main-hdr{display: block;}
-.landing{background-color: #e69a28;}
-.about{background-color: rebeccapurple; padding-top: 140px;}
+/* .landing{background-color: #e69a28;}
+.about{background-color: rebeccapurple;}
 .skills{background-color: #e69a28;}
-.team{background-color: rebeccapurple;}
+.team{
+	background-color: rebeccapurple; 
+
+}
 .services{background-color: #e69a28;}
 .facts{background-color: rebeccapurple;}
 .work{background-color: #e69a28;}
@@ -472,4 +474,5 @@
 .testimonial{background-color: rebeccapurple;}
 .pricing{background-color: #e69a28;}
 .quote{background-color: rebeccapurple;}
-.contact{background-color: #e69a28;}
+.contact{background-color: #e69a28;} */
+	//background-attachment: fixed;linear-gradient(to top, #e69a28 0%,#e69a28 50%,#000000 50%,white 50%,white 100%)
