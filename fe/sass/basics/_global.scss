@@ -74,7 +74,6 @@
 }
 .sub-section{
 	background-color: $light-grey-2;
-	//background-color: red;
 	padding: 128px 0 200px 0;
 	.sub-section-hdr{
 		width: 55%;
@@ -96,9 +95,4 @@ hr{
 	border: none;
 	border-bottom: 2px solid #cacaca;
 }
-// Helpers
-	.no-padding{
-		padding: 0;
-	}
-
 /* End Global */

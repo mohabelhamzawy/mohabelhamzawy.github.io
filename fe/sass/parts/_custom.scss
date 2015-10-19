@@ -48,6 +48,7 @@
 
 /* Start Landing */
 .landing{
+	z-index: 1;
 	.wrapper{
 		color: $wh;
 		@include skewY;
@@ -89,6 +90,10 @@
 
 
 /* Start About */
+.about{
+	margin-top: -80px;
+	padding-top: 220px;
+}
 .nav-tabs{
 	@include skewX;
 	border-bottom: none;
@@ -137,6 +142,7 @@
 /* Start Team */
 .team{
 	margin-top: -400px;
+	z-index: 1;
 	.wrapper{
 		color: $wh;
 		background-image: url('../imgs/bg-team.jpg');
@@ -158,6 +164,8 @@
 
 /* Start Services */
 .services{
+	margin-top: -220px;
+	padding-top: 360px;
 	.content-hdr{
 		color: $second-color;
 	}
@@ -240,6 +248,7 @@
 /* Start Twitter */
 .twitter{
 	margin-top: -400px;
+	z-index: 1;
 	.wrapper{
 		background-image: url('../imgs/bg-team.jpg');
 
@@ -256,6 +265,8 @@
 
 /* Start Testimonial */
 .testimonial{
+	margin-top: -220px;
+	padding-top: 360px;
 	.clients{
 		text-align: center;
 		margin-bottom: $main-space * 3;
@@ -278,6 +289,10 @@
 
 
 /* Start Pricing */
+.pricing{
+	background-color: $light-grey-2;
+	padding: 128px 0 400px 0
+}
 .pricing-list{
 	text-align: center;
 	line-height: normal;
@@ -347,6 +362,8 @@
 
 /* Start Quote */
 .quote{
+	margin-top: -400px;
+	z-index: 1;
 	.wrapper{
 		background-image: url('../imgs/bg-team.jpg');
 
@@ -376,6 +393,8 @@
 
 /* End Contact */
 .contact{
+	margin-top: -220px;
+	padding-top: 360px;
 	.information{
 		p, ul{
 			color: $txt-dark-grey;
@@ -423,9 +442,19 @@
 }
 /* End Contact */
 
-
+// Helpers
+	.no-padding{padding: 0 !important;}
+	.no-padding-top{padding-top: 0 !important;}
+	.no-padding-bottom{padding-bottom: 0 !important;}
+	.no-padding-left{padding-left: 0 !important;}
+	.no-padding-right{padding-right: 0 !important;}
 
 
 
 /* End Map */
 /* End Map */
+
+
+.section{
+	//background-color: rebeccapurple;
+}
