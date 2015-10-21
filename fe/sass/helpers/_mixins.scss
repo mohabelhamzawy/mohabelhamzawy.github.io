@@ -39,7 +39,7 @@
 				transition: $what $length $easing;
 	}
 //[3]ANIMATION
-	@mixin animations ($name, $time: .5s, $type: infinite) {
+	@mixin animations ($name, $time: .4s, $type: infinite) {
 		-webkit-animation: $name $time $type; /* Safari 4+ */
 		-moz-animation:    $name $time $type; /* Fx 5+ */
 		-o-animation:      $name $time $type; /* Opera 12+ */

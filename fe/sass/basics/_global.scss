@@ -96,4 +96,27 @@ hr{
 	border: none;
 	border-bottom: 2px solid #cacaca;
 }
+
+.toTop{
+	position: fixed;
+	right: -25%;
+	bottom: 25px;
+	z-index: 1;
+	@include transitions (all, 0.6s);
+	.toTop-btn{
+		background-color: $tr;
+		color: $second-color;
+		border: 3px solid $second-color;
+		padding: 15px 20px;
+		@include transitions (all, 0.2s);
+		&:hover{
+			background-color: $second-color;
+			color: $wh;
+		}
+	}
+	
+	&.active{
+		right: 25px;
+	}
+}
 /* End Global */

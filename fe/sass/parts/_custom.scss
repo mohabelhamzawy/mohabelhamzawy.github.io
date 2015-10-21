@@ -145,6 +145,7 @@
 	.wrapper{
 		color: $wh;
 		background-image: url('../imgs/bg-team.jpg');
+		background-attachment: fixed;
 	}
 	.section-hdr-wrapper{
 		.title{
@@ -251,7 +252,6 @@
 	z-index: 1;
 	.wrapper{
 		background-image: url('../imgs/bg-team.jpg');
-
 		.carousel{
 			.carousel-indicators{
 			}
@@ -366,7 +366,6 @@
 	z-index: 1;
 	.wrapper{
 		background-image: url('../imgs/bg-team.jpg');
-
 		.carousel{
 			.carousel-indicators{
 			}
