@@ -1315,20 +1315,20 @@
 				});
 
 			// [6] Smooth Scroll options
-				// $(function() {
-				// 	$('a[href*=#]:not([href=#]):not([data-toggle="tab"])').click(function() {
-				// 		if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-				// 			var target = $(this.hash);
-				// 			target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-				// 			if (target.length) {
-				// 				$('html,body').animate({
-				// 					scrollTop: target.offset().top
-				// 				}, 1000);
-				// 				return false;
-				// 			}
-				// 		}
-				// 	});
-				// });
+				$(function() {
+					$('a[href*=#]:not([href=#]):not([data-toggle="tab"])').click(function() {
+						if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+							var target = $(this.hash);
+							target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+							if (target.length) {
+								$('html,body').animate({
+									scrollTop: target.offset().top
+								}, 1000);
+								return false;
+							}
+						}
+					});
+				});
 		
 			// [7] Navbar options
 				
@@ -1336,17 +1336,7 @@
 
 			// [8] Parallax options
 			});
-			$(document).ready(function(){
-				$(window).scroll(function(){
-					var y = window.scrollTop();
-					if(y> 100px){
-						$('.main-hdrr').addClass('scroll-action')
-					}else {
-						$('.main-hdrr').removeClass('scroll-action')
-					}
-					.console.log()
-				});
-			});
+			
 		</script>
 		<script src="js/plugins/jquery.stellar.js"></script>
 		<script>
