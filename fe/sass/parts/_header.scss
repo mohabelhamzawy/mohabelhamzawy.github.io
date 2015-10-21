@@ -1,5 +1,5 @@
 /* Start Header */
-.main-hdrr{
+.main-hdr{
 	padding: 10px 0;
 	@include transitions;
 	.navbar-header{
@@ -45,7 +45,6 @@
 	}
 	&.scroll-action{
 		padding: 0;
-		background-color: #333;
 		background-color: rgba(0, 0, 0, 0.70);
 		.navbar-header{
 			margin-top: 15px;
@@ -59,23 +58,5 @@
 			}
 		}
 	}
-		.nav-item{
-		a{
-			
-			&:hover{
-			}
-			&:focus{
-			}
-		}
-		&:last-child{
-			a{
-			}
-		}
-		&.active{
-			a{
-			}
-		}
-	}
 }
-
 /* End Header */

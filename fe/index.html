@@ -9,25 +9,25 @@
 	<body  data-spy="scroll" data-target="#navbar-top">
 
 		<!-- Start Header -->
-		<nav class="main-hdrr navbar-fixed-top">
-			<div class="container">
-				<!-- Brand and toggle get grouped for better mobile display -->
-				<div class="navbar-header">
-					<a class="navbar-brand" href="#"><img src="imgs/logo.png" alt="logo"></a>
-				</div>
+			<nav class="main-hdr navbar-fixed-top">
+				<div class="container">
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<div class="navbar-header">
+						<a class="navbar-brand" href="#"><img src="imgs/logo.png" alt="logo"></a>
+					</div>
 
-				<!-- Collect the nav links, forms, and other content for toggling -->
-				<div class="" id="navbar-top">
-					<ul class="nav navbar-nav navbar-right">
-						<li class="nav-item active"><a href="#start">home</a></li>
-						<li class="nav-item"><a href="#about">about</a></li>
-						<li class="nav-item"><a href="#services">products</a></li>
-						<li class="nav-item"><a href="#testimonial">testimonial</a></li>
-						<li class="nav-item"><a href="#contact">contact</a></li>
-					</ul>
-				</div><!-- /.navbar-collapse -->
-			</div><!-- /.container -->
-		</nav>
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="" id="navbar-top">
+						<ul class="nav navbar-nav navbar-right">
+							<li class="nav-item active"><a href="#start">home</a></li>
+							<li class="nav-item"><a href="#about">about</a></li>
+							<li class="nav-item"><a href="#services">products</a></li>
+							<li class="nav-item"><a href="#testimonial">testimonial</a></li>
+							<li class="nav-item"><a href="#contact">contact</a></li>
+						</ul>
+					</div><!-- /.navbar-collapse -->
+				</div><!-- /.container -->
+			</nav>
 		<!-- End Header -->
 
 
@@ -1335,12 +1335,12 @@
 					$(window).scroll(function () { 
 						//console.log($(window).scrollTop());
 						var y = $(window).scrollTop();
-						
+
 						if (y > 500) {
-							$('.main-hdrr').addClass('scroll-action');
+							$('.main-hdr').addClass('scroll-action');
 						}
 						if (y < 500) {
-							$('.main-hdrr').removeClass('scroll-action');
+							$('.main-hdr').removeClass('scroll-action');
 						}
 					});
 				});
