@@ -1,24 +1,28 @@
 /* Start Header */
-.main-hdr{
-	display: none;
-	background-color: $tr;
+.main-hdrr{
 	padding: 10px 0;
-	position: fixed;
-	width: 100%;
-	z-index: 5;
-	background-color: #333;
-	.logo{
-		float: left;
+	@include transitions;
+	.navbar-header{
+		margin-top: 5px;
+		margin-bottom: 5px;
+		.navbar-brand{
+			padding: 0;
+			height: 60px;
+			@include transitions;
+			img{
+				@include transitions;
+				height: 100%;
+			}
+		}
 	}
-
 	.nav-item{
-		display: inline-block;
 		a{
 			color: $wh;
-			line-height: 64px;
-			margin: 0 10px;
-			padding: 0 10px;
 			text-transform: capitalize;
+			line-height: $main-space * 2;
+			padding: 10px 5px;
+			margin: 5px 10px;
+			@include transitions (all, 0.2s);
 			&:hover{
 				color: $primary-color;
 				background-color: $tr;
@@ -35,9 +39,43 @@
 		}
 		&.active{
 			a{
-				
+				color: $primary-color;
+			}
+		}
+	}
+	&.scroll-action{
+		padding: 0;
+		background-color: #333;
+		background-color: rgba(0, 0, 0, 0.70);
+		.navbar-header{
+			margin-top: 15px;
+			margin-bottom: 15px;
+			.navbar-brand{
+				padding: 0;
+				height: 40px;
+				img{
+					height: 100%;
+				}
+			}
+		}
+	}
+		.nav-item{
+		a{
+			
+			&:hover{
+			}
+			&:focus{
+			}
+		}
+		&:last-child{
+			a{
+			}
+		}
+		&.active{
+			a{
 			}
 		}
 	}
 }
+
 /* End Header */

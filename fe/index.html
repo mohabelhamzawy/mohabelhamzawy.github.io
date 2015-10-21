@@ -6,26 +6,34 @@
 		<link rel="shortcut icon" href="imgs/favicon/favicon.ico">
 		<link rel="stylesheet" href="css/style.css">
 	</head>
-	<body  data-spy="scroll" data-target="#navbar-example">
+	<body  data-spy="scroll" data-target="#navbar-top">
+
 		<!-- Start Header -->
-			<header class="main-hdr">
-				<div class="container" id="navbar-example">
-					<a href="#" class="logo"><img src="imgs/logo.png" alt=""></a>
-					<ul class="nav text-right">
+		<nav class="main-hdrr navbar-fixed-top">
+			<div class="container">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<a class="navbar-brand" href="#"><img src="imgs/logo.png" alt="logo"></a>
+				</div>
+
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="" id="navbar-top">
+					<ul class="nav navbar-nav navbar-right">
 						<li class="nav-item active"><a href="#start">home</a></li>
-						<li class="nav-item"><a href="#about">about us</a></li>
+						<li class="nav-item"><a href="#about">about</a></li>
 						<li class="nav-item"><a href="#services">products</a></li>
 						<li class="nav-item"><a href="#testimonial">testimonial</a></li>
 						<li class="nav-item"><a href="#contact">contact</a></li>
 					</ul>
-				</div>
-			</header>
+				</div><!-- /.navbar-collapse -->
+			</div><!-- /.container -->
+		</nav>
 		<!-- End Header -->
 
 
 		<!-- Start Landing -->
 			<div class="skew-section landing" id="start">
-				<div class="wrapper">
+				<div class="wrapper" data-stellar-backgsround-ratio="0.5">
 					<div class="dotted">
 						<div class="container text-center">
 							<div class="col-sm-8 col-sm-offset-2 reskew">
@@ -1288,42 +1296,61 @@
 				$('.fact-list .number').countTo({
 					refreshInterval: 	50,
 				});
-				
+			
 			// [4] Filteration options
-			$(function(){
-				$('#filters').mixItUp();
-			});
+				$(function(){
+					$('#filters').mixItUp();
+				});
 
-			// [4] Nice Scroll options
-			$("html").niceScroll({
-				cursorcolor: '#000',
-				cursorborder: 'none',
-				cursorwidth: 8,
-				// cursorborderradius: 0,
-				// scrollspeed: 100,
-				cursoropacitymin: 1,
-				cursoropacitymax: 1,
-				zindex: 999999,
-			});
+			// [5] Nice Scroll options
+				$("html").niceScroll({
+					cursorcolor: '#000',
+					cursorborder: 'none',
+					cursorwidth: 8,
+					// cursorborderradius: 0,
+					// scrollspeed: 100,
+					cursoropacitymin: 1,
+					cursoropacitymax: 1,
+					zindex: 999999,
+				});
 
-			// [5] Smooth Scroll options
-			$(function() {
-				$('a[href*=#]:not([href=#]):not([data-toggle="tab"])').click(function() {
-					if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-						var target = $(this.hash);
-						target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-						if (target.length) {
-							$('html,body').animate({
-								scrollTop: target.offset().top
-							}, 1000);
-							return false;
-						}
+			// [6] Smooth Scroll options
+				// $(function() {
+				// 	$('a[href*=#]:not([href=#]):not([data-toggle="tab"])').click(function() {
+				// 		if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+				// 			var target = $(this.hash);
+				// 			target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+				// 			if (target.length) {
+				// 				$('html,body').animate({
+				// 					scrollTop: target.offset().top
+				// 				}, 1000);
+				// 				return false;
+				// 			}
+				// 		}
+				// 	});
+				// });
+		
+			// [7] Navbar options
+				
+				
+
+			// [8] Parallax options
+			});
+			$(document).ready(function(){
+				$(window).scroll(function(){
+					var y = window.scrollTop();
+					if(y> 100px){
+						$('.main-hdrr').addClass('scroll-action')
+					}else {
+						$('.main-hdrr').removeClass('scroll-action')
 					}
+					.console.log()
 				});
 			});
-			
-
-			});
+		</script>
+		<script src="js/plugins/jquery.stellar.js"></script>
+		<script>
+			$.stellar(y);
 		</script>
 	</body>
 </html>

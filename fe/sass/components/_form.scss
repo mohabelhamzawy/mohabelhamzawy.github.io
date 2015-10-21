@@ -30,6 +30,7 @@
 
 	textarea.form-item{
 		min-height: 150px;
+		max-height: 320px;
 	}
 	.form-wrapper{
 		&:nth-child(1){
