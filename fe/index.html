@@ -1331,16 +1331,26 @@
 				});
 		
 			// [7] Navbar options
-				
-				
+				$(document).ready(function() {
+					$(window).scroll(function () { 
+						//console.log($(window).scrollTop());
+						var y = $(window).scrollTop();
+						
+						if (y > 500) {
+							$('.main-hdrr').addClass('scroll-action');
+						}
+						if (y < 500) {
+							$('.main-hdrr').removeClass('scroll-action');
+						}
+					});
+				});
 
 			// [8] Parallax options
 			});
-			
 		</script>
 		<script src="js/plugins/jquery.stellar.js"></script>
 		<script>
-			$.stellar(y);
+			$.stellar();
 		</script>
 	</body>
 </html>
