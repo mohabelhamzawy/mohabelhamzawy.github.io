@@ -7,6 +7,16 @@
 		<link rel="stylesheet" href="css/style.css">
 	</head>
 	<body  data-spy="scroll" data-target="#navbar-top">
+		<!-- Start Spinner -->
+			<div class="spinner-overlay">
+				<div class="spinner-wrapper">
+					<div class="spinner">
+						<div class="inner"></div>
+					</div>
+				</div>
+			</div>
+		<!-- End Spinner -->
+
 
 		<!-- Start Header -->
 			<nav class="main-hdr navbar-fixed-top">
@@ -1150,7 +1160,7 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-xs-7">
-							<form class="form" action="">
+							<form class="form" action="example.com">
 							<div class="row">
 								<div class="form-wrapper col-xs-6">
 									<input type="text" class="form-item" placeholder="name" required>
@@ -1226,6 +1236,8 @@
 			</div> -->
 		<!-- End Fixed button -->
 
+
+		
 
 
 
@@ -1364,6 +1376,11 @@
 			
 			// [9] WOW options
 				new WOW().init();
+
+			// [10] Spinner options
+				$(window).load(function() {
+					$('.spinner-overlay').fadeOut(1000);
+				});
 			
 			});
 		</script>
